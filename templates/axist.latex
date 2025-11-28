@@ -11,9 +11,9 @@
   citecolor=$if(linkcolor)$$linkcolor$$else$axist$endif$
 }
 \usepackage{titlesec}
-\titleformat{\section}{\Large\bfseries\color{axist}}{\thesection}{0.8em}{}
-\titleformat{\subsection}{\large\bfseries\color{axist}}{\thesubsection}{0.6em}{}
-\titleformat{\subsubsection}{\normalsize\bfseries\color{axist}}{\thesubsubsection}{0.5em}{}
+\titleformat{\section}{\Large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\section}{0pt}{1.2em}{0.6em}
 \titlespacing*{\subsection}{0pt}{1em}{0.4em}
 \titlespacing*{\subsubsection}{0pt}{0.8em}{0.3em}
@@ -32,23 +32,23 @@ $endif$
 \renewcommand\CJKfamilydefault{\CJKrmdefault}
 \usepackage{longtable,booktabs}
 \usepackage{array,colortbl,etoolbox}
-\arrayrulecolor{axist}
-\setlength{\arrayrulewidth}{0.6pt}
+\arrayrulecolor{gray!60}
+\setlength{\arrayrulewidth}{0.5pt}
 \renewcommand{\arraystretch}{1.15}
-\newcommand{\axistrowcolors}{\rowcolors{2}{axist!5}{white}}
-\newcommand{\axisthead}{\rowcolor{axist!12}}
-\AtBeginEnvironment{longtable}{\axistrowcolors\arrayrulecolor{axist}}
-\AtBeginEnvironment{tabular}{\axistrowcolors\arrayrulecolor{axist}}
+\newcommand{\axistrowcolors}{\rowcolors{2}{gray!6}{white}}
+\newcommand{\axisthead}{\rowcolor{gray!12}}
+\AtBeginEnvironment{longtable}{\axistrowcolors\arrayrulecolor{gray!60}}
+\AtBeginEnvironment{tabular}{\axistrowcolors\arrayrulecolor{gray!60}}
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.4em}
 \setlist[enumerate]{leftmargin=1.5em,itemsep=0.35em,topsep=0.4em}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{\color{axist}\textbf{$if(title)$$title$$endif$}}
+\lhead{\textbf{$if(title)$$title$$endif$}}
 \rhead{\small\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\headrule}{\hbox to\headwidth{\color{axist}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{gray!60}\leaders\hrule height \headrulewidth\hfill}}
 
 $if(title)$
 \title{\textbf{$title$}}

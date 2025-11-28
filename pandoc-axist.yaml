@@ -12,7 +12,7 @@ variables:
   monofont: "Menlo"
   CJKmainfont: "PingFang SC"
   CJKsansfont: "PingFang SC"
-  color: "1F4B99" # AXIST primary tone
-  linkcolor: "1F4B99"
+  color: "2C2C2C" # neutral dark tone
+  linkcolor: "4A4A4A"
   geometry: "margin=2cm"
   linestretch: 1.2
