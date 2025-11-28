@@ -1,0 +1,17 @@
+from: gfm
+to: pdf
+pdf-engine: xelatex
+template: templates/axist.latex
+standalone: true
+metadata:
+  lang: zh-CN
+variables:
+  fontsize: 12pt
+  mainfont: "Latin Modern Roman"
+  sansfont: "Latin Modern Sans"
+  monofont: "Latin Modern Mono"
+  CJKmainfont: "FandolSong-Regular"
+  color: "1F4B99" # AXIST primary tone
+  linkcolor: "1F4B99"
+  geometry: "margin=2.2cm"
+  linestretch: 1.2

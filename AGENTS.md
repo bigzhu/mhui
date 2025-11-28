@@ -11,6 +11,7 @@ Use this guide to keep the project’s documentation consistent and easy to main
 - `less 数字游民.md` — quick read/verify the current plan.
 - `markdownlint "**/*.md"` — lint formatting once `npm install -g markdownlint-cli` is available.
 - `mdformat 数字游民.md` — optional auto-format if `mdformat` is installed; review the diff before saving.
+- `./scripts/md-to-pdf-axist.sh 数字游民.md` — export to AXIST-styled PDF via Pandoc defaults in `pandoc-axist.yaml`.
 - `git diff` — sanity-check edits before sharing (if working in a git clone).
 
 ## Coding Style & Naming Conventions

@@ -1,0 +1,64 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$]{article}
+\usepackage{ifxetex,ifluatex}
+\usepackage{geometry}
+\geometry{$if(geometry)$$geometry$$else$margin=2.2cm$endif$}
+\usepackage{xcolor}
+\definecolor{axist}{HTML}{$if(color)$$color$$else$1F4B99$endif$}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=$if(linkcolor)$$linkcolor$$else$axist$endif$,
+  urlcolor=$if(linkcolor)$$linkcolor$$else$axist$endif$,
+  citecolor=$if(linkcolor)$$linkcolor$$else$axist$endif$
+}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{axist}}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\large\bfseries\color{axist}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{axist}}{\thesubsubsection}{0.5em}{}
+\usepackage{setspace}
+$if(linestretch)$
+\setstretch{$linestretch$}
+$endif$
+$if(xetex)$
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{$if(mainfont)$$mainfont$$else$Latin Modern Roman$endif$}
+\setsansfont{$if(sansfont)$$sansfont$$else$Latin Modern Sans$endif$}
+\setmonofont{$if(monofont)$$monofont$$else$Latin Modern Mono$endif$}
+\setCJKmainfont{$if(CJKmainfont)$$CJKmainfont$$else$FandolSong-Regular$endif$}
+$endif$
+\usepackage{longtable,booktabs}
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{$if(title)$$title$$endif$}
+\rhead{\thepage}
+
+$if(title)$
+\title{\textbf{$title$}}
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \\ $endfor$}
+$endif$
+$if(date)$
+\date{$date$}
+$else$
+\date{}
+$endif$
+
+\begin{document}
+$if(title)$
+\maketitle
+$endif$
+$if(toc)$
+{
+\hypersetup{linkcolor=black}
+\tableofcontents
+}
+$endif$
+
+$body$
+
+\end{document}
