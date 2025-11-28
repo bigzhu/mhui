@@ -30,9 +30,10 @@ $endif$
 \setCJKmainfont{$if(CJKmainfont)$$CJKmainfont$$else$FandolSong-Regular$endif$}
 \setCJKsansfont{$if(CJKsansfont)$$CJKsansfont$$else$FandolHei-Regular$endif$}
 \renewcommand\CJKfamilydefault{\CJKrmdefault}
-\usepackage{amssymb}
+\usepackage{pifont}
 \usepackage{newunicodechar}
-\newunicodechar{⭐}{{\ensuremath{\bigstar}}}
+\newunicodechar{⭐}{{\ding{72}}}
+\newunicodechar{★}{{\ding{72}}}
 \usepackage{longtable,booktabs}
 \usepackage{array,colortbl,etoolbox}
 \arrayrulecolor{gray!70}
