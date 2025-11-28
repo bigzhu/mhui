@@ -2,6 +2,17 @@
 \usepackage{geometry}
 \geometry{$if(geometry)$$geometry$$else$margin=2.2cm$endif$}
 \usepackage[table]{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Disable section numbering
+\setcounter{secnumdepth}{0}
 \definecolor{axist}{HTML}{$if(color)$$color$$else$1F4B99$endif$}
 \usepackage{hyperref}
 \hypersetup{
@@ -35,14 +46,16 @@ $endif$
 \newunicodechar{⭐}{{\ding{72}}}
 \newunicodechar{★}{{\ding{72}}}
 \usepackage{longtable,booktabs}
-\usepackage{array,colortbl,etoolbox}
+\usepackage{array,colortbl,etoolbox,calc}
 \arrayrulecolor{gray!70}
 \setlength{\arrayrulewidth}{0.6pt}
+\setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.15}
+\newcommand{\real}[1]{#1}
 \newcommand{\axistrowcolors}{\rowcolors{2}{gray!8}{white}}
-\newcommand{\axisthead}{\rowcolor{gray!16}}
-\AtBeginEnvironment{longtable}{\axistrowcolors\arrayrulecolor{gray!70}}
-\AtBeginEnvironment{tabular}{\axistrowcolors\arrayrulecolor{gray!70}}
+\newcommand{\axisthead}{\rowcolor{gray!12}}
+\AtBeginEnvironment{longtable}{\small\axistrowcolors\arrayrulecolor{gray!70}\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}}
+\AtBeginEnvironment{tabular}{\small\axistrowcolors\arrayrulecolor{gray!70}}
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.4em}
 \setlist[enumerate]{leftmargin=1.5em,itemsep=0.35em,topsep=0.4em}
@@ -51,8 +64,12 @@ $endif$
 \fancyhf{}
 \lhead{\textbf{$if(title)$$title$$endif$}}
 \rhead{\small\thepage}
+\usepackage[zh]{datetime2}
+\rfoot{\small\DTMsetstyle{iso}\today}
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\headrule}{\hbox to\headwidth{\color{gray!60}\leaders\hrule height \headrulewidth\hfill}}
+\emergencystretch=2em
+\sloppy
 
 $if(title)$
 \title{\textbf{$title$}}

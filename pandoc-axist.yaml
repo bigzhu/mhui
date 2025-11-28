@@ -1,10 +1,15 @@
-from: gfm
+from: markdown+table_captions+pipe_tables+multiline_tables+table_attributes+emoji+auto_identifiers
 to: pdf
-pdf-engine: xelatex
+pdf-engine: tectonic
 template: templates/axist.latex
 standalone: true
+number-sections: false
+toc: true
+toc-depth: 3
 metadata:
   lang: zh-CN
+filters:
+  - scripts/table-widths.lua
 variables:
   fontsize: 12pt
   mainfont: "PingFang SC"
