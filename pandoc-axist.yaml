@@ -7,11 +7,11 @@ metadata:
   lang: zh-CN
 variables:
   fontsize: 12pt
-  mainfont: "Source Han Serif SC VF"
-  sansfont: "Source Han Sans SC VF"
+  mainfont: "FandolSong-Regular"
+  sansfont: "FandolHei-Regular"
   monofont: "Menlo"
-  CJKmainfont: "Source Han Serif SC VF"
-  CJKsansfont: "Source Han Sans SC VF"
+  CJKmainfont: "FandolSong-Regular"
+  CJKsansfont: "FandolHei-Regular"
   color: "1F4B99" # AXIST primary tone
   linkcolor: "1F4B99"
   geometry: "margin=2.2cm"
