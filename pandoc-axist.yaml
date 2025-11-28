@@ -14,5 +14,5 @@ variables:
   CJKsansfont: "PingFang SC"
   color: "2C2C2C" # neutral dark tone
   linkcolor: "4A4A4A"
-  geometry: "margin=2cm"
+  geometry: "margin=1.7cm"
   linestretch: 1.2
