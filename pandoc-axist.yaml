@@ -14,5 +14,5 @@ variables:
   CJKsansfont: "PingFang SC"
   color: "1F4B99" # AXIST primary tone
   linkcolor: "1F4B99"
-  geometry: "margin=2.2cm"
+  geometry: "margin=2cm"
   linestretch: 1.2
