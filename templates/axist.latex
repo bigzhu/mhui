@@ -15,6 +15,7 @@
 \titleformat{\subsection}{\large\bfseries\color{axist}}{\thesubsection}{0.6em}{}
 \titleformat{\subsubsection}{\normalsize\bfseries\color{axist}}{\thesubsubsection}{0.5em}{}
 \usepackage{setspace}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
