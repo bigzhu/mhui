@@ -7,11 +7,11 @@ metadata:
   lang: zh-CN
 variables:
   fontsize: 12pt
-  mainfont: "FandolSong-Regular"
-  sansfont: "FandolHei-Regular"
+  mainfont: "PingFang SC"
+  sansfont: "PingFang SC"
   monofont: "Menlo"
-  CJKmainfont: "FandolSong-Regular"
-  CJKsansfont: "FandolHei-Regular"
+  CJKmainfont: "PingFang SC"
+  CJKsansfont: "PingFang SC"
   color: "1F4B99" # AXIST primary tone
   linkcolor: "1F4B99"
   geometry: "margin=2.2cm"
