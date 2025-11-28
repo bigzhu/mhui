@@ -11,6 +11,8 @@ OUT="${2:-$(basename "${SRC%.md}")-axist.pdf}"
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-pandoc "$SRC" --defaults "$ROOT_DIR/pandoc-axist.yaml" -o "$OUT"
+ENGINE="${PDF_ENGINE:-tectonic}"
+
+pandoc "$SRC" --defaults "$ROOT_DIR/pandoc-axist.yaml" --pdf-engine="$ENGINE" -o "$OUT"
 
 echo "Generated PDF: $OUT"
