@@ -26,6 +26,7 @@ $if(xetex)$
 \setsansfont{$if(sansfont)$$sansfont$$else$Latin Modern Sans$endif$}
 \setmonofont{$if(monofont)$$monofont$$else$Latin Modern Mono$endif$}
 \setCJKmainfont{$if(CJKmainfont)$$CJKmainfont$$else$FandolSong-Regular$endif$}
+\setCJKsansfont{$if(CJKsansfont)$$CJKsansfont$$else$FandolHei-Regular$endif$}
 $endif$
 \usepackage{longtable,booktabs}
 \usepackage{enumitem}

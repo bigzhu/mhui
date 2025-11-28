@@ -10,7 +10,8 @@ variables:
   mainfont: "Latin Modern Roman"
   sansfont: "Latin Modern Sans"
   monofont: "Latin Modern Mono"
-  CJKmainfont: "FandolSong-Regular"
+  CJKmainfont: "Source Han Serif SC"
+  CJKsansfont: "Source Han Sans SC"
   color: "1F4B99" # AXIST primary tone
   linkcolor: "1F4B99"
   geometry: "margin=2.2cm"
