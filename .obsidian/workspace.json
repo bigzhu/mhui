@@ -171,7 +171,15 @@
   },
   "active": "6ffd6c3e4f429fc1",
   "lastOpenFiles": [
+    "scripts/md-to-pdf-axist.sh",
+    "scripts",
+    "templates/axist.latex",
+    "templates",
+    "pandoc-axist.yaml",
+    "数字游民2.pdf",
+    "芒市数字游民.pdf",
     "CLAUDE.md",
-    "数字游民.md"
+    "数字游民.md",
+    "需求.md"
   ]
 }
