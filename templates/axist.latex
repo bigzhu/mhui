@@ -29,10 +29,10 @@ $endif$
 \setmonofont{$if(monofont)$$monofont$$else$Latin Modern Mono$endif$}
 \setCJKmainfont{$if(CJKmainfont)$$CJKmainfont$$else$FandolSong-Regular$endif$}
 \setCJKsansfont{$if(CJKsansfont)$$CJKsansfont$$else$FandolHei-Regular$endif$}
-\newfontfamily\emojifont{Apple Color Emoji}
 \renewcommand\CJKfamilydefault{\CJKrmdefault}
+\usepackage{amssymb}
 \usepackage{newunicodechar}
-\newunicodechar{⭐}{{\emojifont⭐}}
+\newunicodechar{⭐}{{\ensuremath{\bigstar}}}
 \usepackage{longtable,booktabs}
 \usepackage{array,colortbl,etoolbox}
 \arrayrulecolor{gray!60}
